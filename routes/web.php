@@ -12,9 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/orderpage', function () {
+
+    Route::post('/orderpage/add', 'OrderController@addOrder');
+
+    return view('orderpage');
+});

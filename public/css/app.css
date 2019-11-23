@@ -11100,3 +11100,8 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-image: url(/images/leather.jpg?5ae50e6ae6bbba34bea5758c40fdf44b);
+  background-size: 50%;
+}
+
